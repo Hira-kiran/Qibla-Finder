@@ -45,7 +45,7 @@ class _MyAppState extends State<MyApp> {
             return QiblaFinder();
           } else {
             return Scaffold(
-              backgroundColor: Colors.green,
+              
             );
           }
         },
