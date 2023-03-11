@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
+import 'Theme/theme.dart';
 import 'appScreens/splash_screen.dart';
 
 void main() {
@@ -34,6 +35,9 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      themeMode: ThemeMode.system,
+      theme: ThemeClass.lightTheme,
+      darkTheme: ThemeClass.darkTheme,
       title: 'Qibla Finder',
       home: FutureBuilder(
         builder: (context, snapshot) {
