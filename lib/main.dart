@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'Theme/theme.dart';
-import 'appScreens/splash_screen.dart';
+import 'appScreens/qibla_finder.dart';
 
 void main() {
   runApp(const MyApp());
@@ -42,7 +42,7 @@ class _MyAppState extends State<MyApp> {
       home: FutureBuilder(
         builder: (context, snapshot) {
           if (hasPermission) {
-            return SplashScreen();
+            return QiblaFinder();
           } else {
             return Scaffold(
               backgroundColor: Colors.green,

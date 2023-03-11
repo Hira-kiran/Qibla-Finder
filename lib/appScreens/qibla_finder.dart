@@ -2,25 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:qibla_finder/Constants/colors.dart';
 import 'package:qibla_finder/Constants/images.dart';
 
-import 'qibla_screen.dart';
+import 'home_screen.dart';
 
-class SplashScreen extends StatefulWidget {
-  const SplashScreen({super.key});
+class QiblaFinder extends StatefulWidget {
+  const QiblaFinder({super.key});
 
   @override
-  State<SplashScreen> createState() => _SplashScreenState();
+  State<QiblaFinder> createState() => _QiblaFinderState();
 }
 
-class _SplashScreenState extends State<SplashScreen> {
-  /*  @override
-  void initState() {
-    Timer(
-        Duration(seconds: 3),
-        (() => Navigator.push(
-            context, MaterialPageRoute(builder: (context) => QiblaScreen()))));
-    super.initState();
-  }
- */
+class _QiblaFinderState extends State<QiblaFinder> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -59,7 +50,7 @@ class _SplashScreenState extends State<SplashScreen> {
           InkWell(
             onTap: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => QiblaScreen()));
+                  MaterialPageRoute(builder: (context) => HomeScreen()));
             },
             child: Container(
               height: 55,

@@ -5,18 +5,18 @@ import 'package:flutter_qiblah/flutter_qiblah.dart';
 import 'package:qibla_finder/Constants/colors.dart';
 import 'package:qibla_finder/Constants/images.dart';
 
-class QiblaScreen extends StatefulWidget {
-  const QiblaScreen({super.key});
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
 
   @override
-  State<QiblaScreen> createState() => _QiblaScreenState();
+  State<HomeScreen> createState() => _HomeScreenState();
 }
 
 Animation<double>? animation;
 AnimationController? _animationController;
 double? begin = 0.0;
 
-class _QiblaScreenState extends State<QiblaScreen>
+class _HomeScreenState extends State<HomeScreen>
     with SingleTickerProviderStateMixin {
   @override
   void initState() {
